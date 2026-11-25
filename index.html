@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do App</title>
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="todo-container">
+
+        <h1>Todos</h1>
+
+        
+        <input
+            type="text"
+            id="taskInput"
+            placeholder="What needs to be done?"
+        >
+
+        
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search tasks..."
+        >
+
+        
+      <div class="select-all">
+    <input type="checkbox" id="selectAll">
+    <label for="selectAll">Mark all as complete</label>
+
+    <button id="deleteSelected">Delete Selected</button>
+</div>
+        
+        <ul id="taskList">
+        </ul>
+
+      
+        <div class="filters">
+            <button data-filter="all">All</button>
+            <button data-filter="active">Active</button>
+            <button data-filter="completed">Completed</button>
+            <button data-filter="deleted">Deleted</button>
+        </div>
+
+        
+        <div class="task-counters">
+            <span>All: <span id="allCount">0</span></span>
+            <span>Completed: <span id="completedCount">0</span></span>
+            <span>Deleted: <span id="deletedCount">0</span></span>
+        </div>
+
+    </main>
+
+    
+    <script src="script.js" defer></script>
+
+</body>
+</html>
